@@ -1,0 +1,92 @@
+body {
+    color: #0f052b;
+    text-align: center;
+    margin: 0;
+    padding: 20;
+}
+
+header {
+    background-color: rgb(219, 217, 68);
+    padding: 30px 0;
+}
+
+header h1 {
+    margin: 0;
+    background-color: rgba(56, 192, 90, 0.548);
+    font-size: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2A5E8F;
+    margin: 0 15px;
+}
+
+.cliente {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(236, 228, 228, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cliente input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #0c0101;
+    border-radius: 4px;
+}
+
+.cliente input:focus {
+    border-color: #2A5E8F;
+    box-shadow: 0 0 5px #2A5E8F;
+}
+
+.cliente button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2A5E8F;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cliente button:hover {
+    background-color: #1a4b72;
+}
+
+#mensagem {
+    color: red;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(24, 1, 1, 0.842);
+}
+
+table th,
+table td {
+    border: 10px solid #cab6b1;
+    padding: 20px;
+    text-align: center;
+}
+
+table th {
+    background-color: #010913;
+    color: rgb(246, 252, 251);
+}
+
+tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}

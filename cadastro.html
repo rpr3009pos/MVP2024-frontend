@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de cadastro de clientes - Loja de Carros">
+    <title> Cadastro de Clientes </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Faça Seu Cadastro</h1>
+    </header>
+
+    <div>
+        <a href="home.html" title='Home-Page'>PAGINA_INICIAL</a>
+        <p> </p>
+        <!-- <a href="cadastro.html" title='cadastro de clientes'>FAÇA_SEU_CADASTRO</a> -->
+        <p> </p>
+        <a href="veiculos.html" title='escolha seu novo veiculo'>ESCOLHA_SEU_VEICULO</a>
+        <p> </p>
+    </div>
+
+    <!-- Formulário de Cadastro -->
+    <section class="cliente">
+        <form id="cadastro-form" onsubmit="novo_cliente(event)">
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required pattern="\d{11}"
+                title="Digite um CPF VÁLIDO com 11 números SEM PONTOS, ESPAÇOS OU TRAÇOS">
+            <input type="date" id="dt_nasc" name="dt_nasc" required>
+            <input type="text" id="logradouro" name="logradouro" placeholder="Endereço" required>
+            <input type="text" id="cep" name="cep" placeholder="CEP" required pattern="\d{8}"
+                title="Digite um CEP válido com 8 números">
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+            <input type="text" id="uf" name="uf" placeholder="UF" maxlength="2" required>
+            <button type="submit">Enviar dados</button>
+        </form>
+        <div id="mensagem"></div>
+    </section>
+
+    <!-- Tabela para Visualização e Edição -->
+    <section class="clientes">
+        <h2>DADOS CADASTRADOS</h2>
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Data de Nascimento</th>
+                    <th>Endereço</th>
+                    <th>CEP</th>
+                    <th>Cidade</th>
+                    <th>UF</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados dinâmicos serão inseridos aqui -->
+            </tbody>
+        </table>
+
+    </section>
+
+    <style>
+        body {
+        background-image: url('imagens/cadastro.jpg');
+        background-size: cover;
+        background-color: #f7fbfc;
+        max-height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    </style>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
